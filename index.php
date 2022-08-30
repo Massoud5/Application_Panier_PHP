@@ -18,20 +18,17 @@
     // var_dump($_SESSION);
     // var_dump($_SESSION['products']);
     ?>
-
-        <nav>
-            <div><a href="recap.php">Panier&nbsp;</a><?php 
-                                                            if (isset($_SESSION['products']) && !empty($_SESSION['products'])){
-                                                                $plurielSingle = (count($_SESSION['products'])>1) ? "articles" : "article";
-                                                                echo "<span id='nbArticles'>" . count($_SESSION['products']) ." $plurielSingle</span></div>";
-                                                            }
-                                                        ?>              
-        </nav>
+    <nav>
+        <div><a href="recap.php">Panier&nbsp;</a><?php 
+                                                        if (isset($_SESSION['products']) && !empty($_SESSION['products'])){
+                                                            $plurielSingle = (count($_SESSION['products'])>1) ? "articles" : "article";
+                                                            echo "<span id='nbArticles'>" . count($_SESSION['products']) ." $plurielSingle</span></div>";
+                                                        }
+                                                    ?>              
+    </nav>
 
     <section>
         
-
-
         <h1>Ajouter un produit</h1>
         <form action="traitement.php?action=ajouter" method="post">
             <p>
@@ -57,20 +54,21 @@
             </p>
         </form>
 
-        <p id="validation"><?php 
+        <p id="validation">
+            <?php 
 
-                                if (isset($_SESSION['message']) && !empty($_SESSION['message'])){
+                if (isset($_SESSION['message']) && !empty($_SESSION['message'])){
 
-                                    // $message = implode($_SESSION['message']);
-                                    // foreach($_SESSION['message'] as $message){
-                                    //     echo $message;
-                                    // }
-                                    echo $_SESSION['message']; //? The value is not an array because I didn't use Square brackets in the "traitement.php" file. 
-                                    unset($_SESSION['message']);
-                                    
-                                }
+                    // $message = implode($_SESSION['message']);
+                    // foreach($_SESSION['message'] as $message){
+                    //     echo $message;
+                    // }
+                    echo $_SESSION['message']; //? The value is not an array because I didn't use Square brackets in the "traitement.php" file. 
+                    unset($_SESSION['message']);
+                    
+                }
                         
-                            ?>
+            ?>
         </p>
     </section>
 

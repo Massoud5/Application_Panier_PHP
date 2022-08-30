@@ -12,9 +12,9 @@
 </head>
 <body>
 
-        <nav>
-            <a href="index.php">Accueil</a>
-        </nav>
+    <nav>
+        <a href="index.php">Accueil</a>
+    </nav>
 
     <section>
         
@@ -26,7 +26,7 @@
         }
         else{
             // var_dump($_SESSION['products']); // to verify session values
-        echo "<table>",
+            echo "<table>",
                     "<thead>",
                         "<tr>",
                             "<th>#</th>",
@@ -36,7 +36,7 @@
                             "<th>Total</th>",
                         "</tr>",
                     "</thead>",
-                    "<tbody>";
+                   "<tbody>";
             $totalGeneral = 0;
             // var_dump($_SESSION['products']);
             foreach($_SESSION['products'] as $index => $product){
@@ -57,8 +57,8 @@
                         <td class='padding' colspan=1><strong><span class='total'>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</span></strong></td>
                      </tr>";
             
-            echo  "</tbody>",
-                "</table>";
+            echo   "</tbody>",
+                 "</table>";
         }
 
         if(isset($_SESSION['products']) && !empty($_SESSION['products'])) {
