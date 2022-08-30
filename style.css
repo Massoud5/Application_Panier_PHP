@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background: linear-gradient(90deg, #2b2a2a 0%, #212122 20%, #212122 80%, #2b2a2a 100%);
+}
+
+body section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+nav {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+nav a {
+
+    background: linear-gradient(90deg, #2539ba 0%, #000cb1 30%, #000cb1 70%, #2539ba 100%);
+    border: #2539ba solid ;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 5px;
+}
+
+    /*index styles*/
+
+#nbArticles {
+    color: orange;
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form p {
+    margin-bottom: 20px;
+} 
+
+form p label{
+   display: flex;
+   justify-content: space-between;
+}
+
+form p label input{
+    color: #661d1d;
+    text-align: center;
+}
+
+form input[type=text]{
+    text-align: left;
+}
+
+#submit {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form input[type=submit]{
+    background: linear-gradient(90deg, #139226 0%, #026615 30%, #026615 70%, #139226 100%);
+    width: 200px;
+    height: 50px;
+    border: #139226 solid ;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#validation{
+    text-align: center;
+    color: green;
+    font-size: 10px;
+}
+
+
+    /*recap styles*/
+
+table {
+    width: 600px;
+}
+
+table th {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 23px;
+}
+
+table td {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.total {
+    font-size: 21px;
+    color: #056705;
+    font-weight: bold;
+}
+
+.padding {
+    padding-top: 30px;
+}
+
+#diminuer {
+    color: red;
+}
+
+#augmenter {
+    color: green;
+}
+
+#supprimer{
+    font-weight: 600;
+    font-size: 10px;
+    color: red;
+}
+
+#vider {
+    background: linear-gradient(90deg, #ba2525 0%, #b10000 30%, #b10000 70%, #ba2525 100%);
+    border: #ba2525 solid ;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 5px;
+}

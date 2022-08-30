@@ -1,0 +1,24 @@
+# Elan Formation Exercise
+
+## Cart Application in php
+
+### What I learned:
+
+#### Superglobals
+
+- To start a session: session_start()
+
+- To create an array in a superglobal array:
+    for example: $_SESSION['products']
+            Here I created the "products" array in the "$_SESSION" uperglobal array.
+
+
+
+#### Native Functions
+- number_format(
+    variable à modifier,
+    nombre de décimales souhaité,
+    caractère séparateur décimal,
+    caractère séparateur de milliers5
+    );
+
