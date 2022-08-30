@@ -19,12 +19,19 @@
     // var_dump($_SESSION['products']);
     ?>
     <nav>
-        <div><a href="recap.php">Panier&nbsp;</a><?php 
-                                                        if (isset($_SESSION['products']) && !empty($_SESSION['products'])){
-                                                            $plurielSingle = (count($_SESSION['products'])>1) ? "articles" : "article";
-                                                            echo "<span id='nbArticles'>" . count($_SESSION['products']) ." $plurielSingle</span></div>";
-                                                        }
-                                                    ?>              
+        <div>
+            <a href="recap.php">Panier&nbsp;</a>
+        <?php
+
+            if (isset($_SESSION['products']) && !empty($_SESSION['products'])){
+                
+                $plurielSingle = (count($_SESSION['products'])>1) ? "articles" : "article";
+
+                echo "<span id='nbArticles'>" . count($_SESSION['products']) ." $plurielSingle</span>
+        </div>";
+            }
+
+        ?>              
     </nav>
 
     <section>
